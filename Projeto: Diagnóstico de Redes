@@ -1,0 +1,28 @@
+# Projeto: Diagnóstico e Correção de Falhas em Ponto de Rede
+
+## Contexto
+Foram identificadas ocorrências recorrentes de falhas em pontos de rede dentro do ambiente corporativo, impactando diretamente a conectividade dos usuários e a continuidade das atividades operacionais. Esses problemas poderiam ter origem tanto em configurações lógicas (VLAN, portas de switch) quanto em falhas físicas (cabeamento, conectores ou patch cords), exigindo uma abordagem estruturada de diagnóstico.
+
+## Solução
+Foi adotado um processo sistemático de análise, abrangendo desde a camada lógica até a camada física da rede:
+
+1 - Acesso remoto ao switch responsável pelo ponto de rede, para verificação da configuração da porta (VLAN, status e conectividade);
+2 - Preparação dos equipamentos necessários para diagnóstico em campo: testador de cabo, cabos de rede, conectores RJ45 e ferramentas de crimpagem;
+3 - Teste inicial do ponto de rede utilizando testador de cabo:
+  3.1 - Caso o sinal apresentasse sequência completa (1 a 8), o problema era direcionado para configuração da máquina;
+  3.2 - Caso houvesse falhas na sequência, iniciava-se a correção física;
+4 - Recrimpagem do conector RJ45 no ponto de rede, quando identificado defeito;
+5 - Utilização do modo “scan” do testador para identificar a porta correspondente no switch;
+6 - Teste e possível substituição da porta do switch;
+7 - Inspeção física do cabeamento ao longo do trajeto, em busca de danos estruturais;
+8 - Recrimpagem ou substituição da fêmea do ponto de rede, quando necessário;
+9 - Substituição do patch cord (rack e estação de trabalho), como última etapa de validação.
+
+## Tecnologias
+1 - Switch gerenciável (acesso remoto para análise de portas e VLANs);
+2 - Testador de cabos de rede;
+3 - Ferramentas de crimpagem e conectores RJ45;
+4 - Cabos de rede (patch cords).
+
+## Resultado
+A aplicação de um processo estruturado de diagnóstico permitiu a identificação rápida da origem das falhas, reduzindo o tempo de indisponibilidade dos pontos de rede. Além disso, a abordagem padronizada garantiu maior eficiência na resolução de incidentes, atuando de forma completa nas camadas física e lógica da rede e aumentando a confiabilidade da infraestrutura.
