@@ -1,13 +1,29 @@
 # Projeto: Padronização de máquinas
 
 ## Contexto
-No contexto da 11ª Brigada de Infantaria Mecanizada, no que se refere a tecnologia da informação, o escalão superior é o 3º Centro de Telemática de Área (localizado na capital de São Paulo), com isso a responsabilidade da Seção de Tecnologia da Informação é seguir os padrões por eles estabelecidos. Como por exemplo a padronização de máquinas na parte de antivírus instalado e atualizado, sincronizado com o NTP do 3º CTA, hostname com um padrão pré estabelecido 
+A 11ª Brigada de Infantaria Mecanizada foi agraciada com uma doação de 25 computadores novos vindos do escalão superior (CITEx) e a responsabilidade da Seção de Tecnologia da Informação era fazer a formatação dessas máquinas para entregar aos usuários (optamos pela formatação pois temos uma imagem ISO onde já está configurada com todos os programas e aplicativos necessários, o que facilita o trabalho).
 
 ## Solução
-[O que você fez]
+Ao verificar a demanda dos usuários que mais necessitavam deste upgrade, a sequência de trabalho era a seguinte:
+1 - recolher o computador do usuário (por não poder ter hostname duplicado);
+2 - fazer o backup de arquivos em HD externo, devidamente identificado;
+3 - plugar o pen drive com Acronis e conectar o HD externo com a ISO do Windows 11;
+4 - formatar o atual SSD e instalar a ISO do HD externo;
+5 - ao ligar a máquina pronta, inicia-se a configuração pontual de cada máquina:
+  5.1 - alterar o hostname;
+  5.2 - sincronizar com o NTP do 3º CTA;
+  5.3 - atualizar o antivírus, pois este é ligado pelo hostname, logo não é possível deixar pronto na ISO genérica;
+  5.4 - rodar as atualizações do Windows Update, caso tiver;
+  5.5 - devolver o backup para a máquina.
+6 - após a configuração pontual, a etiqueta e lacre das máquinas são posicionadas;
+7 - os arquivos do parque computacional são atualizados;
+8 - a máquina é entregue ao usuário.
 
 ## Tecnologias
-[O que usou]
+As tecnologias utilizadas foram as seguintes:
+1 - pen drive bootável com Acronis;
+2 - Xen Orchestra para criar a ISO do Windows 11;
+3 - antivírus Kaspersky.
 
 ## Resultado
-[O que melhorou] 
+O upgrade do parque computacional é importante para melhorar a fluidez dos trabalhos rotineiros, além de que os computadores recolhidos são "garimpados" para melhorar outras máquinas que precisam. 
