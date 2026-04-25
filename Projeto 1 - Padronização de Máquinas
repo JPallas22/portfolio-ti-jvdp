@@ -1,29 +1,30 @@
 # Projeto: Padronização de máquinas
 
 ## Contexto
-A 11ª Brigada de Infantaria Mecanizada foi agraciada com uma doação de 25 computadores novos vindos do escalão superior (CITEx) e a responsabilidade da Seção de Tecnologia da Informação era fazer a formatação dessas máquinas para entregar aos usuários (optamos pela formatação pois temos uma imagem ISO onde já está configurada com todos os programas e aplicativos necessários, o que facilita o trabalho).
+A 11ª Brigada de Infantaria Mecanizada recebeu a doação de 25 novos computadores provenientes do escalão superior (CITEx). Coube à Seção de Tecnologia da Informação a preparação dessas máquinas para entrega aos usuários finais. Optou-se pela formatação completa dos equipamentos, utilizando uma imagem ISO padronizada já configurada com os sistemas e aplicações institucionais, o que garantiu maior agilidade, consistência e padronização no processo de implantação.
 
 ## Solução
-Ao verificar a demanda dos usuários que mais necessitavam deste upgrade, a sequência de trabalho era a seguinte:
-1 - recolher o computador do usuário (por não poder ter hostname duplicado);
-2 - fazer o backup de arquivos em HD externo, devidamente identificado;
-3 - plugar o pen drive com Acronis e conectar o HD externo com a ISO do Windows 11;
-4 - formatar o atual SSD e instalar a ISO do HD externo;
-5 - ao ligar a máquina pronta, inicia-se a configuração pontual de cada máquina:
-  5.1 - alterar o hostname;
-  5.2 - sincronizar com o NTP do 3º CTA;
-  5.3 - atualizar o antivírus, pois este é ligado pelo hostname, logo não é possível deixar pronto na ISO genérica;
-  5.4 - rodar as atualizações do Windows Update, caso tiver;
-  5.5 - devolver o backup para a máquina.
-6 - após a configuração pontual, a etiqueta e lacre das máquinas são posicionadas;
-7 - os arquivos do parque computacional são atualizados;
-8 - a máquina é entregue ao usuário.
+Após o levantamento dos usuários prioritários para substituição dos equipamentos, foi estabelecido o seguinte fluxo operacional:
+
+1 - Recolhimento do computador do usuário, evitando conflitos de hostname na rede;
+2 - Realização de backup completo dos arquivos em HD externo devidamente identificado;
+3 - Inicialização do equipamento via pen drive bootável com Acronis e acesso à imagem ISO do Windows 11 armazenada em HD externo;
+4 - Formatação do SSD e instalação da imagem padronizada;
+5 - Configuração individual da máquina após a instalação:
+  5.1 - Alteração do hostname;
+  5.2 - Sincronização com o servidor NTP do 3º CTA;
+  5.3 - Atualização do antivírus (dependente do hostname, inviabilizando pré-configuração na ISO);
+  5.4 - Execução das atualizações do Windows Update;
+  5.5 - Restauração dos arquivos do usuário;
+6 - Aplicação de etiqueta patrimonial e lacre de segurança;
+7 - Atualização dos registros do parque computacional;
+8 - Entrega do equipamento ao usuário final.
 
 ## Tecnologias
 As tecnologias utilizadas foram as seguintes:
-1 - pen drive bootável com Acronis;
-2 - Xen Orchestra para criar a ISO do Windows 11;
-3 - antivírus Kaspersky.
+1. Acronis (via pen drive bootável);
+2. Xen Orchestra para preparação da imagem ISO;
+3. Kaspersky para proteção dos endpoints.
 
 ## Resultado
-O upgrade do parque computacional é importante para melhorar a fluidez dos trabalhos rotineiros, além de que os computadores recolhidos são "garimpados" para melhorar outras máquinas que precisam. 
+A padronização e modernização do parque computacional proporcionaram melhoria significativa no desempenho das máquinas, impactando diretamente a produtividade dos usuários. Além disso, os equipamentos substituídos foram reaproveitados estrategicamente, permitindo a recuperação de componentes para manutenção e melhoria de outros dispositivos, otimizando o uso de recursos disponíveis.
